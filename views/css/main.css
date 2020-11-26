@@ -374,7 +374,7 @@ dl,
 form,
 .fluid-video-wrapper,
 .ss-custom-select {
-  margin-bottom: 3rem;
+  margin-bottom: 0rem;
 }
 
 /* ------------------------------------------------------------------- 
@@ -1150,7 +1150,7 @@ input::-moz-focus-inner {
 .section-intro {
   text-align: center;
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0rem;
 }
 .section-intro h1 {
   font-family: "librebaskerville-bold", serif;
@@ -1173,7 +1173,7 @@ input::-moz-focus-inner {
   line-height: 1.833;
 }
 .section-intro.with-bottom-sep {
-  padding-bottom: 4.2rem;
+
   position: relative;
 }
 .section-intro.with-bottom-sep::after {
@@ -1567,7 +1567,7 @@ header .header-logo a {
 }
 .home-content-tablecell .row {
   position: relative;
-  padding-top: 9rem;
+  padding-top: 3rem;
   padding-bottom: 15rem;
 }
 .home-content-tablecell h3 {
