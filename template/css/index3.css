@@ -1,0 +1,72 @@
+body{
+  background-color:#111111;
+}
+
+
+.media_menu{
+  padding:1rem 0;
+  height:rem;
+}
+
+
+/*--------------bid_detail--------------*/
+
+
+.media_menu > button{
+  background-color:rgb(255, 255, 255) !important;
+  border:none !important;
+  font-size:1rem;
+  line-height:0.5rem;
+  padding:0;
+  color:rgb(75, 72, 72);
+  width:32%;
+  padding:0;
+  border-radius:2px;
+  height: 2rem;
+  margin:0;
+  padding:0;
+  line-height:1.6rem;
+}
+
+
+#pedigree{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+#video{
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+
+
+
+
+#descripcion{
+  font-size:0.8rem;
+}
+
+
+
+
+#ofertar{
+  width:100%;
+  padding:1rem;
+  margin-top:1rem;
+  border:none !important;
+  background-color:rgb(255, 72, 0) !important;
+  color:white;
+  font-size:1rem;
+  --font-family-sans-serif:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+  border-radius:2px;
+}
+
+
+
+
+/*//////////////////DERECHA*/
+

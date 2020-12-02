@@ -5,9 +5,7 @@
   position: relative;
   padding: 4rem;
 }
-.azul{
-  background-color:#000000;
-}
+
 
 .tituloSeccion > h1 {
   font-family: "librebaskerville-bold", serif;
@@ -19,12 +17,6 @@
   margin-bottom:0px !important;
 }
 
-
-
-/*///////////////////////PRODUCTOS DESTACADOS////////////////////////*/
-#productosDestacados{
-  background-color:#e5e5e5;
-}
 
 .fluido{
   display:flex;
@@ -48,38 +40,16 @@
 
 
 
-#producto{
-  z-index:-20;
-
-}
 
 
-#svg2{
-  background-image: url("../images/fondoCirculos.jpg");
-  background-size:20%;
-  background-repeat: repeat;
-  vertical-align:top;
-}
 
-/*///////////////////////NSOTOROS///////////////////////*/
-.negro{
-  color:rgb(46, 46, 46);
-}
-
-.fondonaranja{
-  background-color:#e26d12;
-}
-
-
-.subtituloDeCategoria{
-  color:white
-}
-/*///////////////////////NUESTROS PRODUCTPS///////////////////////*/
+/*///////////////////////DIV CABALLO///////////////////////*/
 
 .promocion{
   width:20%;
   display:flex;
   flex-direction: column;
+
   margin:0;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,1);
   border-radius: 2rem;
@@ -87,33 +57,30 @@
 
 }
 
-
-
-
 #textoCategoria{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-items:space-between;
   margin:0;
   background-color: #e5e5e5;
   border-bottom-right-radius: 1rem; 
 }
 
 .titulo{
-  font-family: "librebaskerville-bold", serif;
+  font-family: "montserrat-bold", serif;
   color:rgb(22, 22, 22);
-
   text-align:center;
-  line-height:1;
+  line-height:0;
+  margin:0 !important;
+  padding:0 !important;
 }
 
 
-
-.logo_en_letras{
-  font-family: "librebaskerville-regular", serif !important;
-
-}
-
-.subtituloDeCategoria{
-  font-family: "librebaskerville-regular", serif;
+.ubicacion{
+  font-family: "montserrat-thin", serif;
   font-size: 1.5rem;
+  padding:0;
   color:rgb(22, 22, 22);
   text-align:center;
   border-radius: 2rem;
@@ -127,29 +94,22 @@
 
 
 
-
-#homeicon{
-  display: block;
-  position: fixed;
-  left: 32px;
-  top: 30px;
-  height: 42px;
-  width: 140px;
-  line-height: 42px;
-  font-family: "montserrat-regular", sans-serif;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: .2rem;
-  color: rgba(255, 255, 255, 0.5);
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+#textoCategoria > button{
+    padding:0;margin:0;
+    line-height: 3rem;
+    height:100%;
+    width:80%;  
+    color:white;
+    border-radius:4px;
+    background-color:rgb(11, 116, 11);
 }
+#textoCategoria > button >a{
 
-#logo3{
-height:42px;
-padding:0.5rem;
-width:100% !important;
+  color:white;
+
+}
+.condiciones{
+  font-family: "montserrat-thin", serif;
+  color:green;
+  font-size:1rem;
 }
