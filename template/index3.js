@@ -23,8 +23,9 @@ function agregarfila(){
 
  function mostrarPedigree(){
     document.getElementById("video").style.display="none";
-    document.getElementById("pedigree").style.display="block";
     document.getElementById("tabla").style.display="none";
+    document.getElementById("pedigree").style.display="block";
+
  }
 
 

@@ -101,7 +101,7 @@
     width:80%;  
     color:white;
     border-radius:4px;
-    background-color:rgb(11, 116, 11);
+    background-color:#ff0035;
 }
 #textoCategoria > button >a{
 
@@ -110,6 +110,6 @@
 }
 .condiciones{
   font-family: "montserrat-thin", serif;
-  color:green;
+  color:black;
   font-size:1rem;
 }
