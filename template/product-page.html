@@ -11,39 +11,52 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <link href="css/index3.css" rel="stylesheet">
   <link href="css/style.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
 
 </head>
 
 <body >
 
-      
+  <div id="overlay" onclick="off()">
+    <div id="login">
+      <div id="login_data">
+        <input type="text" id="firstName" class="form-control" placeholder="usuario">
+        <label for="firstName" class=""></label>
+        <input type="text" id="firstName" class="form-control" placeholder="contraseña">
+        <button id="ingresar" type="submit" onclick="mostrarOfertas()">Ingresar</button>
+        <p>NO estoy registrado</p>
+      </div>
+    </div>
+  </div>
+
+
     <div id="contenedor">
         <div id="izquierda">
-          <iframe id="video2"     src="https://rural-ftp.com/ofertas/videos/ZzZtaO0U5LblxHPJ.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video id="video2" width=100%  muted controls autoplay src="../views/images/video.mp4"></video>
 
           <div  id="nombreCaballo" >
-            <h1 id="nombre_caballo">Tronador</h1>
+            <h5 id="nombre_caballo">Tronador</h5>
           </div>
 
           <div class="media_menu">
-            <button class="three" onclick="mostrarVideo()">Video</button>
+            <button class="three" id="boton_mostrar_video" onclick="mostrarVideo()">Video</button>
             <button class="three" onclick="mostrarPedigree()">Pedigree</button>
-            <button class="three" onclick="mostrarOfertas()">Ofertas</button>
+           
+
           </div>
           
           
-          <div id="tags">
+          <!-- <div id="tags">
             <div class="mb-3">
               <a href=""><span class="badge purple mr-1" style="color:white;">Category 2</span></a>
               <a href=""><span class="badge blue mr-1"style="color:white;">New</span> </a>
               <a href=""><span class="badge red mr-1"style="color:white;">Bestseller</span></a>
             </div>
-          </div>
+          </div> -->
 
           <div id="descripcion">
-            <p>Una de los mejores potrilos de la cabaña. Jufgo la temporada de alto handicap hasta el 2018. Elejigda mejor caballo en Copa Diamante 2017. Jugo el
-            cion Tutal del año siguidtne</p>
+            <p>Una de los mejores potrillos de la cabaña. Jugo la temporada de alto handicap hasta el 2018. Elegida mejor caballo en Copa Diamante 2017. Jugo tornes nacionales, y tambien tuvo actuaciones destacadas en el extranjero</p>
           </div>
 
           <div id="iconos">
@@ -66,13 +79,13 @@
           </div>
 
           <div id="condiciones">
-            <p class="lead"><span class="mr-1">Piso Subasta:</span><span>$10000</span></p>
+            <p class="lead"><span class="mr-1">Pre Oferta:</span><span id="preoferta">$10000</span></p>
           </div>
 
           
     
 
-          <button id="ofertar"class= type="submit" onclick="agregarfila()">Ofertar</button>
+          <button id="ofertar" type="submit" onclick="on()">Ofertar</button>
          
           </div>
        
@@ -81,24 +94,61 @@
           
         
           <div id="derecha">
-            
-            <iframe id="video"     src="https://rural-ftp.com/ofertas/videos/ZzZtaO0U5LblxHPJ.mp4" mute=true  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-            <div    id="pedigree">
-              Esta es la descurpcion enter del caballo. pedrigre.. etc
-            </div>
+     
             
-            <table   class="table table-bordered" id="tabla">
-              <thead width=100%>
-                <tr>
-                  <th scope="col">Usuario</th>
-                  <th scope="col">Nombre</th>
-                  <th scope="col">Origen</th>
-                  <th scope="col">Valor</th>
-                </tr>
-              </thead><tbody><tr>  <th scope="row">781</th>  <td>Mark</td>  <td>Buenos Aires, Arg</td>  <td>$13000</td></tr><tr>  <th scope="row">921</th>  <td>Jacob</td>  <td>Thornton</td>  <td>$12900</td></tr><tr>  <th scope="row">234</th>  <td>Larry</td>  <td>the Bird</td>  <td>@$12000</td></tr><tr>  <th scope="row">213</th>  <td>Larry</td>  <td>Buenos Aires, Arg</td>  <td>@twitter</td></tr><tr>  <th scope="row">412</th>  <td>Larry</td>  <td>Miami, US</td>  <td>@twitter</td></tr><tr>  <th scope="row">334</th>  <td>Larry</td>  <td>Cordoba, Arg</td>  <td>@twitter</td></tr></tbody>
-            </table>
+            
+            <video id="video" width=100% height=100% muted controls autoplay src="../views/images/video.mp4"></video>
+            
+
+            
+            <div    id="pedigree" style="padding:1rem;">
+              Descripcion detallada del caballo. se podrian agregar fotos, PDF o formato a definir
+            </div>
+
+            <div id="tabla">
+
+              <div id="bid_detail">
+                <div>
+                  <label for="zip">Yo</label>
+                  <h2>Facundo Cabral</h2>
+                  <label for="zip">oferto</label>
+                  <input type="text" class="form-control"  id="input_oferta" placeholder="US$" required>
+                  <p>Step:- 200 / +200 </p>
+                  <label for="zip">por lote</label>
+                  <h2>#456 Tronador</h2>
+                  <input style="padding:2rem;"type="checkbox" id="myCheck" onclick="myFunction()">He leido base y condiciones
+                  <button id="ofertar2" type="submit" onclick="agregarfila()">Ofertar</button>
+                </div>
+              </div>
+
+              <table  id="tabla_remate" class="table table-responsive " >
+                <thead >
+                  <tr>
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Origen</th>
+                    <th scope="col">Valor</th>
+                  </tr>
+                </thead><tbody>
+                  <tr>  <th scope="row">781</th>  <td>Mark jacobson</td>   <td>Buenos Aires, Arg</td>  <td>$13000</td></tr>
+                  <tr>  <th scope="row">921</th>  <td>Jacob</td>  <td>Thornton</td>           <td>$12900</td></tr>
+                  <tr>  <th scope="row">234</th>  <td>Larry</td>  <td>the Bird</td>           <td>$12300</td></tr>
+                  <tr>  <th scope="row">213</th>  <td>Larry</td>  <td>Buenos Aires, Arg</td>  <td>$11900</td></tr>
+                  <tr>  <th scope="row">412</th>  <td>Larry</td>  <td>Miami, US</td>          <td>$11400</td></tr>
+                  <tr>  <th scope="row">334</th>  <td>Larry</td>  <td>Cordoba, Arg</td>       <td>$11200</td></tr>
+                </tbody></table>
+
+            </div>
+
+
+
+
+
         </div>
+
+
+
 
         </div>
 
