@@ -5,6 +5,7 @@ body{
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
 
 
+    
 #contenedor{
   display:flex;
   flex-direction: row;
@@ -41,14 +42,16 @@ body{
     margin-top:1rem;
     border:none !important;
     color:rgb(255, 255, 255) !important;
-    background-color:#434343;
+    background-color:#77a852;
     font-size:1rem;
     --font-family-sans-serif:"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     border-radius:2px;
   }
   .media_menu > button{
+
     background-color:rgb(196, 196, 196) !important;
+    background-color:#77a852 !important;
     border:none !important;
     font-size:1rem;
     line-height:0.5rem;
@@ -95,12 +98,12 @@ body{
     border-radius:2px;
   }
   .media_menu > button{
-    background-color:rgb(196, 196, 196) !important;
+    background-color:#77a852 !important;
     border:none !important;
     font-size:1rem;
     line-height:0.5rem;
     padding:0;
-    color:rgb(75, 72, 72);
+    color:rgb(230, 230, 230);
     width:49%;
     padding:0;
     border-radius:2px;
@@ -126,7 +129,7 @@ body{
 #nombre_caballo{
   margin:1rem;
   font-size:2rem ;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif !important;;
   text-align:center;
 }
 

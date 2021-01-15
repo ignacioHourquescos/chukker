@@ -21,7 +21,7 @@ function agregarfila(){
 }
 document.getElementById("preoferta").innerHTML=document.getElementById("input_oferta").value;
  document.getElementById("tabla").style.display="none";
- 
+
 
 }
 
@@ -41,12 +41,22 @@ document.getElementById("preoferta").innerHTML=document.getElementById("input_of
     window.scrollTo(0, 1000);
  }
 
+ var indicador=true;
 
  function mostrarOfertas(){
-   document.getElementById("video").style.display="none";
-   document.getElementById("pedigree").style.display="none";
-   document.getElementById("tabla").style.display="flex"
-   document.getElementById("ofertar").style.zIndex="-10";
+   if (indicador){
+      document.getElementById("video").style.display="none";
+      document.getElementById("pedigree").style.display="none";
+      document.getElementById("tabla").style.display="flex"
+      document.getElementById("ofertar").style.zIndex="block";
+      document.getElementById("ofertar").style.backgroundColor="red";
+      indicador=false;
+   }
+   else {
+     
+      agregarfila();  
+      document.getElementById("ofertar").style.backgroundColor="grey";
+   }  
    window.scrollTo(0, 1000);
 }
 

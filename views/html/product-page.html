@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>POLO SALES</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/mdb.min.css" rel="stylesheet">
+	<link href="../css/index3.css" rel="stylesheet">
+	<link href="../css/style.min.css" rel="stylesheet">
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+</head>
+
+<body>
+
+	<div id="overlay" onclick="off()">
+		
+		<div id="login">
+
+			<div id="login_data">
+
+				<input type="text" id="firstName" class="form-control" placeholder="usuario">
+				<label for="firstName" class=""></label>
+				<input type="text" id="firstName" class="form-control" placeholder="contraseña">
+				<button id="ingresar" type="submit" onclick="mostrarOfertas()">Ingresar</button>
+				<p>NO estoy registrado</p>
+
+			</div>
+		</div>
+	</div>
+
+
+	<div style="width:3rem;height:3rem;text-align:center; padding:0.75rem;position:fixed;top:1rem; left:1rem; background-color:green;color:white;border-radius:200px">
+		<a class="" href="../../index.html" title="" style="color:white;font-weight:bold;">
+			<<</a></div>
+
+	<div id="contenedor">
+		
+		<div id="izquierda">
+			<video id="video2" width=100% muted controls autoplay src="../images/video.mp4"></video>
+			<div id="nombreCaballo">
+				<h1 id="nombre_caballo">Tata Bless My soul</h1>
+				<h5 style="margin:0;padding:0;text-align:center;font-size:0,4rem;color:grey;">Numero de Lote 456</h5>
+			</div>
+			<div class="media_menu">
+				<button class="three" id="boton_mostrar_video" onclick="mostrarVideo()">Video</button>
+				<button class="three" onclick="mostrarPedigree()">Pedigree</button>
+			</div>
+			<div id="descripcion">
+				<p>Una de los mejores potrillos de la cabaña. Jugo la temporada de alto handicap hasta el 2018. Elegida
+					mejor caballo en Copa Diamante 2017. Jugo tornes nacionales, y tambien tuvo actuaciones destacadas
+					en el extranjero</p>
+			</div>
+			<div id="iconos">
+				<div><i class="fas fa-map-marker-alt"></i><h3>Buenos Aires</h3></div>
+				<div><i class="far fa-calendar-alt"></i><h3>04 Marzo 2020</h3></div>
+				<div><i class="fas fa-gavel"></i><h3>Subasta online</h3></div>
+			</div>
+
+			<div id="condiciones">
+				<p class="lead"><span class="mr-1">Pre Oferta:</span><span id="preoferta">$10000</span></p>
+			</div>
+			<button id="ofertar" type="submit" onclick="mostrarOfertas()">Ofertar</button>
+		</div>
+
+
+		<div id="derecha">
+			<video id="video" width=100% height=100% muted controls autoplay src="../images/video.mp4"></video>
+			<div id="pedigree" style="padding:5em;">
+				<img style="padding:2rem;text-align:center;" src="../../tree.png">
+			</div>
+
+			<div id="tabla">
+				<div id="bid_detail">
+					<div>
+						<label for="zip">Yo</label>
+						<h2>Facundo Cabral</h2>
+						<label for="zip">oferto</label>
+						<input type="text" class="form-control" id="input_oferta" placeholder="US$" required>
+						<p>Step:- 200 / +200 </p>
+						<label for="zip">por lote</label>
+						<h2>#456 Tata Bless My Soul</h2>
+						<input style="padding:2rem;" type="checkbox" id="myCheck" onclick="myFunction()">He leido base y
+						condiciones
+					</div>
+				</div>
+
+				<table id="tabla_remate"  style="text-align:center;" class="table table-responsive ">
+					<thead>
+						<tr>
+							<th scope="col">Usuario</th>
+							<th scope="col">Nombre</th>
+							<th scope="col">Origen</th>
+							<th scope="col">Valor</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr><th scope="row">781</th><td>Mark jacobson</td><td>Buenos Aires, Arg</td><td>$13000</td></tr>
+						<tr><th scope="row">921</th><td>Jacobo Arlestain</td><td>Thornton</td><td>$12900</td</tr>
+						<tr><th scope="row">234</th><td>Sebastian Alvarez</td><td>the Bird</td><td>$12300</td></tr>
+						<tr><th scope="row">213</th><td>Jorge Santucho</td><td>Buenos Aires, Arg</td><td>$11900</td</tr>
+						<tr><th scope="row">412</th><td>Maria Crisale</td><td>Miami, US</td><td>$11400</td</tr>
+						<tr><th scope="row">334</th><td>Renata Carmelia</td><td>Cordoba, Arg</td><td>$11200</td</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+	</div>
+
+
+	<script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="../js/popper.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/mdb.min.js"></script>
+	<script type="text/javascript">new WOW().init();</script>
+	<script type="text/javascript" src="../js/tree.js"></script>
+	<script type="text/javascript" src="../js/index3.js"></script>
+
+
+</body>
+
+</html>
