@@ -19,7 +19,7 @@ function agregarfila(){
 } else {
 	document.getElementById("video").style.display="block";
 }
-document.getElementById("preoferta").innerHTML=document.getElementById("input_oferta").value;
+document.getElementById("preoferta").innerHTML="$"+document.getElementById("input_oferta").value;
  document.getElementById("tabla").style.display="none";
 
  indicador=true;
