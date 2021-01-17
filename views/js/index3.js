@@ -22,6 +22,8 @@ function agregarfila(){
 document.getElementById("preoferta").innerHTML=document.getElementById("input_oferta").value;
  document.getElementById("tabla").style.display="none";
 
+ indicador=true;
+
 
 }
 
@@ -38,7 +40,10 @@ document.getElementById("preoferta").innerHTML=document.getElementById("input_of
     document.getElementById("tabla").style.display="none";
     document.getElementById("pedigree").style.display="block";
     document.getElementById("ofertar").style.display="block";
-    window.scrollTo(0, 1000);
+    window.scrollTo(0,document.body.scrollHeight);
+
+    element.scrollIntoView({block: "end"});
+
  }
 
  var indicador=true;
@@ -56,6 +61,7 @@ document.getElementById("preoferta").innerHTML=document.getElementById("input_of
      
       agregarfila();  
       document.getElementById("ofertar").style.backgroundColor="grey";
+    
    }  
    window.scrollTo(0, 1000);
 }

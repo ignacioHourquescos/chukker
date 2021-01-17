@@ -31,6 +31,12 @@
 }
 .tituloSeccion {
   padding:  2rem;
+  text-align:center;
+}
+.tituloSeccion >h1 {
+ text-align:center;
+ padding:  2rem;
+  font-size:3rem !important;
 }
 .titulo{
   font-size:1.5rem;
@@ -55,6 +61,7 @@
     text-align: center;
     position: relative;
     padding: 4rem;
+ 
   }
   }
 
@@ -131,4 +138,16 @@
   font-family: "montserrat-thin", serif;
   color:black;
   font-size:1rem;
+}
+
+#go_home{
+  position:fixed;
+  top:4rem;
+  left:4rem;
+  z-index:100;
+  
+}
+
+.fa
+{color:white;
 }

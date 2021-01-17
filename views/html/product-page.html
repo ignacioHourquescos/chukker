@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
 	<title>POLO SALES</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -16,7 +16,12 @@
 
 </head>
 
+
+
 <body>
+
+	
+	
 
 	<div id="overlay" onclick="off()">
 		
@@ -27,32 +32,28 @@
 				<input type="text" id="firstName" class="form-control" placeholder="usuario">
 				<label for="firstName" class=""></label>
 				<input type="text" id="firstName" class="form-control" placeholder="contraseña">
-				<button id="ingresar" type="submit" onclick="mostrarOfertas()">Ingresar</button>
+				<button id="ingresar" type="submit" onclick="">Ingresar</button>
 				<p>NO estoy registrado</p>
 
 			</div>
 		</div>
 	</div>
 
-
-	<div style="width:3rem;height:3rem;text-align:center; padding:0.75rem;position:fixed;top:1rem; left:1rem; background-color:green;color:white;border-radius:200px">
-		<a class="" href="../../index.html" title="" style="color:white;font-weight:bold;">
-			<<</a></div>
-
 	<div id="contenedor">
 		
 		<div id="izquierda">
 			<video id="video2" width=100% muted controls autoplay src="../images/video.mp4"></video>
 			<div id="nombreCaballo">
+				<a  href="../../index.html" id="go_home"><i class="fa fa-arrow-left fa-2x"></i></a>
 				<h1 id="nombre_caballo">Tata Bless My soul</h1>
 				<h5 style="margin:0;padding:0;text-align:center;font-size:0,4rem;color:grey;">Numero de Lote 456</h5>
 			</div>
 			<div class="media_menu">
 				<button class="three" id="boton_mostrar_video" onclick="mostrarVideo()">Video</button>
-				<button class="three" onclick="mostrarPedigree()">Pedigree</button>
+				<button class="three" onclick="mostrarPedigree()"><a href="#pedigree"></a>Pedigree</button>
 			</div>
 			<div id="descripcion">
-				<p>Una de los mejores potrillos de la cabaña. Jugo la temporada de alto handicap hasta el 2018. Elegida
+				<p>Una de los potrillos mas destacado de la cabaña. Jugo la temporada de alto handicap hasta el 2018. Elegida
 					mejor caballo en Copa Diamante 2017. Jugo tornes nacionales, y tambien tuvo actuaciones destacadas
 					en el extranjero</p>
 			</div>
@@ -71,20 +72,20 @@
 
 		<div id="derecha">
 			<video id="video" width=100% height=100% muted controls autoplay src="../images/video.mp4"></video>
-			<div id="pedigree" style="padding:5em;">
+			<div id="pedigree">
 				<img style="padding:2rem;text-align:center;" src="../../tree.png">
 			</div>
 
 			<div id="tabla">
 				<div id="bid_detail">
 					<div>
-						<label for="zip">Yo</label>
-						<h2>Facundo Cabral</h2>
-						<label for="zip">oferto</label>
+						
+						<h2 style="font-size:1.5rem;">Su oferta</h2>
+					
 						<input type="text" class="form-control" id="input_oferta" placeholder="US$" required>
-						<p>Step:- 200 / +200 </p>
-						<label for="zip">por lote</label>
-						<h2>#456 Tata Bless My Soul</h2>
+						<p style="color:grey;">Step:- 200 / +200 </p>
+		
+						<h2 style="font-size:1.5rem;">#456 Tata Bless My Soul</h2>
 						<input style="padding:2rem;" type="checkbox" id="myCheck" onclick="myFunction()">He leido base y
 						condiciones
 					</div>

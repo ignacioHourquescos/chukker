@@ -1,254 +1,178 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es">
+
 <head>
+	<title>Polo Sales</title>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="icon" type="image/png" href="/images/fondoNaranja.png" />
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/vendor.css">
+	<link rel="stylesheet" href="../css/main.css">
+	<link rel="stylesheet" href="../css/personal.css">
+	<link rel="stylesheet" href="../css/index2.css">
+	<link rel="stylesheet" href="../css/carrousel.css">
+	<link rel="stylesheet" href="../css/galeria.css">
+	<script data-cfasync="false" src="form-submission-handler.js"></script>
+	<link rel="stylesheet" href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
+	<script src="../js/src/modernizr.js"></script>
+	<script src="../js/src/pace.min.js"></script>
+	<script src="../js/carusel.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-<title>Polo Sales</title>
-<meta content="width=device-width, initial-scale=1" name="viewport" />
-<link rel="icon" 				type="image/png" href="/images/fondoNaranja.png"/>
-<link rel="stylesheet" 		href="../css/base.css">
-<link rel="stylesheet" 		href="../css/vendor.css">
-<link rel="stylesheet" 		href="../css/main.css">
-<link rel="stylesheet" 		href="../css/personal.css">
-<link rel="stylesheet" 		href="../css/index2.css">
-<link rel="stylesheet" 		href="../css/carrousel.css">
-<link rel="stylesheet" 		href="../css/galeria.css">
-<script data-cfasync="false" src="form-submission-handler.js"></script>
-<link rel="stylesheet" 		href="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.css">
-<script src="../js/src/modernizr.js"></script>
-<script src="../js/src/pace.min.js"></script>
-<script src="../js/carusel.js"></script>
-<script type="text/javascript" src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
 </head>
-
-
-
-
-
-
-<!-- WPP BUTTON ================================================== -->
-<div id="WAButton" style="font-family: Arial, Helvetica, sans-serif; z-index:10;"></div>
-<!-- <div ><a id="llamar" href="tel:1145523070">LLAMANOS!</a></div> -->
 
 
 <!-- SIDE MENU================================================== -->
 <header>
 
+	<header>
 
-	<!-- <a id="homeicon" href="../../index.html">
-		<img id="logo3" src="./views/images/logoRenova.png"></img>
-	</a> -->
-	
+		<a id="header-menu-trigger" href="#0">
+			<span class="header-menu-text">Menu</span>
+			<span class="header-menu-icon"></span>
+		</a>
 
+		<nav id="menu-nav-wrap">
+			<a href="#0" class="close-button" title="close"><span>Close</span></a>
+			<h3></h3>
+			<ul class="nav-list">
+				<li><a class="" href="../../index.html">HOME</a></li>
+				<li calss="current"><a class="smoothscroll" href="#asd" title="">SUBASTAS</a></li>
+				<li><a class="" href="./remateEnVivo.html" title="">REMATES</a></li>
+			</ul>
+		</nav>
 
-
-
-
-
-<!-- NIESTRSO PRODCUTS
-================================================== -->
-
-<div style="width:100%;background-color:#1b1b1b">
-<div class="tituloSeccion" >
-	<h1 style="color:#e5e5e5">Nuestras Crias</h1>
-</div>
-
-
+</header>
 
 
-	<div class="fluido">
-		<div class="contenedor" style="margin-bottom:4rem;" >
-			
-			<div class="promocion" style="background-color:#e5e5e5;">
-				<div style="border-top-left-radius: 1rem; ">
-					<img src="../images/caballo1.png" style="border-top-left-radius: 1rem; " alt="" >
+<a  href="../../index.html" id="go_home"><i class="fa fa-arrow-left fa-2x"></i></a>
+
+
+
+	<div style="width:100%;background-color:#1b1b1b" id="asd">
+		<div class="tituloSeccion">
+			<h1 style="color:#e5e5e5">Nuestras Crias</h1>
+		</div>
+
+		<div class="fluido" >
+			<div class="contenedor" style="margin-bottom:4rem;">
+
+				<div class="promocion" style="background-color:#e5e5e5;">
+					<div style="border-top-left-radius: 1rem; ">
+						<img src="../images/caballo1.png" style="border-top-left-radius: 1rem; " alt="">
+					</div>
+					<div style="padding:10px" id="textoCategoria">
+						<h2 class="titulo">Lote #456: Tata Bless My soul</h1>
+							<h3 class="subtituloDeCategoria"></h3>
+							<h3 class="ubicacion">U$D 10000</h3>
+							<a style="width:100%" class="" href="./product-page.html" title=""><button style="width:100%">OFERTAR</button></a>
+
+					</div>
 				</div>
-				<div style="padding:10px" id="textoCategoria">
-					<h2 class="titulo">Lote #456: Tata Bless My soul</h1>
-					<h3 class="subtituloDeCategoria"></h3>
-					<h3 class="ubicacion">U$D 10000</h3>
-					<button><a class="" href="./product-page.html" title="">OFERTAR</a></button>
 
+				<div class="promocion" style="background-color:#e5e5e5;">
+					<div style="border-top-left-radius: 1rem; ">
+						<img src="../images/caballo2.png" style="border-top-left-radius: 1rem; " alt="">
+					</div>
+					<div style="padding:10px" id="textoCategoria">
+						<h2 class="titulo">Lote #452: Alberta Inca</h1>
+							<h3 class="subtituloDeCategoria"></h3>
+							<h3 class="ubicacion">U$D 9000</h3>
+							<a style="width:100%" class="" href="./product-page.html" title=""><button style="width:100%">OFERTAR</button></a>
+
+					</div>
 				</div>
-			</div>
-			
-			<div class="promocion" style="background-color:#e5e5e5;">
-				<div style="border-top-left-radius: 1rem; ">
-					<img src="../images/caballo2.png" style="border-top-left-radius: 1rem; " alt="" >
+
+				<div class="promocion" style="background-color:#e5e5e5;">
+					<div style="border-top-left-radius: 1rem; ">
+						<img src="../images/caballo3.png" style="border-top-left-radius: 1rem; " alt="">
+					</div>
+					<div style="padding:10px" id="textoCategoria">
+						<h2 class="titulo">Lote #231: Tronador</h1>
+							<h3 class="subtituloDeCategoria"></h3>
+							<h3 class="ubicacion">U$D 10000</h3>
+							<a style="width:100%" class="" href="./product-page.html" title=""><button style="width:100%">OFERTAR</button></a>
+
+					</div>
 				</div>
-				<div style="padding:10px" id="textoCategoria">
-					<h2 class="titulo">Lote #452: Alberta Inca</h1>
-					<h3 class="subtituloDeCategoria"></h3>
-					<h3 class="ubicacion">U$D 9000</h3>
-					<button><a class="" href="./product-page.html" title="">OFERTAR</a></button>
 
+				<div class="promocion" style="background-color:#e5e5e5;">
+					<div style="border-top-left-radius: 1rem; ">
+						<img src="../images/caballo4.png" style="border-top-left-radius: 1rem; " alt="">
+					</div>
+					<div style="padding:10px" id="textoCategoria">
+						<h2 class="titulo">Lote #356: Crainer Lift</h1>
+							<h3 class="subtituloDeCategoria"></h3>
+							<h3 class="ubicacion">U$D 10000</h3>
+							<a style="width:100%" class="" href="./product-page.html" title=""><button style="width:100%">OFERTAR</button></a>
+
+					</div>
 				</div>
-			</div>
 
-			<div class="promocion" style="background-color:#e5e5e5;">
-				<div style="border-top-left-radius: 1rem; ">
-					<img src="../images/caballo3.png" style="border-top-left-radius: 1rem; " alt="" >
+				<div class="promocion" style="background-color:#e5e5e5;">
+					<div style="border-top-left-radius: 1rem; ">
+						<img src="../images/caballo2.png" style="border-top-left-radius: 1rem; " alt="">
+					</div>
+					<div style="padding:10px" id="textoCategoria">
+						<h2 class="titulo">Lote #146: Pilkington</h1>
+							<h3 class="subtituloDeCategoria"></h3>
+							<h3 class="ubicacion">U$D 10000</h3>
+							<a style="width:100%" class="" href="./product-page.html" title=""><button style="width:100%">OFERTAR</button></a>
+
+					</div>
 				</div>
-				<div style="padding:10px" id="textoCategoria">
-					<h2 class="titulo">Lote #231: Tronador</h1>
-					<h3 class="subtituloDeCategoria"></h3>
-					<h3 class="ubicacion">U$D 10000</h3>
-					<button><a class="" href="./product-page.html" title="">OFERTAR</a></button>
 
+				<div class="promocion" style="background-color:#e5e5e5;">
+					<div style="border-top-left-radius: 1rem; ">
+						<img src="../images/caballo4.png" style="border-top-left-radius: 1rem; " alt="">
+					</div>
+					<div style="padding:10px" id="textoCategoria">
+						<h2 class="titulo">Lote #546: Grand Royale</h1>
+							<h3 class="subtituloDeCategoria"></h3>
+							<h3 class="ubicacion">U$D 10000</h3>
+							<a style="width:100%" class="" href="./product-page.html" title=""><button style="width:100%">OFERTAR</button></a>
+
+					</div>
 				</div>
-			</div>
 
-			<div class="promocion" style="background-color:#e5e5e5;">
-				<div style="border-top-left-radius: 1rem; ">
-					<img src="../images/caballo4.png" style="border-top-left-radius: 1rem; " alt="" >
+				<div class="promocion" style="background-color:#e5e5e5;">
+					<div style="border-top-left-radius: 1rem; ">
+						<img src="../images/caballo2.png" style="border-top-left-radius: 1rem; " alt="">
+					</div>
+					<div style="padding:10px" id="textoCategoria">
+						<h2 class="titulo">Lote #346: Myfair Lady</h1>
+							<h3 class="subtituloDeCategoria"></h3>
+							<h3 class="ubicacion">U$D 10000</h3>
+							<a style="width:100%" class="" href="./product-page.html" title=""><button style="width:100%">OFERTAR</button></a>
+
+					</div>
 				</div>
-				<div style="padding:10px" id="textoCategoria">
-					<h2 class="titulo">Lote #356: Crainer Lift</h1>
-					<h3 class="subtituloDeCategoria"></h3>
-					<h3 class="ubicacion">U$D 10000</h3>
-					<button><a class="" href="./product-page.html" title="">OFERTAR</a></button>
 
+				<div class="promocion" style="background-color:#e5e5e5;">
+					<div style="border-top-left-radius: 1rem; ">
+						<img src="../images/caballo1.png" style="border-top-left-radius: 1rem; " alt="">
+					</div>
+					<div style="padding:10px" id="textoCategoria">
+						<h2 class="titulo">Lote #230: Jungle Boggie</h1>
+							<h3 class="subtituloDeCategoria"></h3>
+							<h3 class="ubicacion">U$D 10000</h3>
+							<a style="width:100%" class="" href="./product-page.html" title=""><button style="width:100%">OFERTAR</button></a>
+
+					</div>
 				</div>
-			</div>
 
-			<div class="promocion" style="background-color:#e5e5e5;">
-				<div style="border-top-left-radius: 1rem; ">
-					<img src="../images/caballo2.png" style="border-top-left-radius: 1rem; " alt="" >
-				</div>
-				<div style="padding:10px" id="textoCategoria">
-					<h2 class="titulo">Lote #146: Pilkington</h1>
-					<h3 class="subtituloDeCategoria"></h3>
-					<h3 class="ubicacion">U$D 10000</h3>
-					<button><a class="" href="./product-page.html" title="">OFERTAR</a></button>
-
-				</div>
-			</div>
-
-			<div class="promocion" style="background-color:#e5e5e5;">
-				<div style="border-top-left-radius: 1rem; ">
-					<img src="../images/caballo4.png" style="border-top-left-radius: 1rem; " alt="" >
-				</div>
-				<div style="padding:10px" id="textoCategoria">
-					<h2 class="titulo">Lote #546: Grand Royale</h1>
-					<h3 class="subtituloDeCategoria"></h3>
-					<h3 class="ubicacion">U$D 10000</h3>
-					<button><a class="" href="./product-page.html" title="">OFERTAR</a></button>
-
-				</div>
-			</div>
-
-			<div class="promocion" style="background-color:#e5e5e5;">
-				<div style="border-top-left-radius: 1rem; ">
-					<img src="../images/caballo2.png" style="border-top-left-radius: 1rem; " alt="" >
-				</div>
-				<div style="padding:10px" id="textoCategoria">
-					<h2 class="titulo">Lote #346: Myfair Lady</h1>
-					<h3 class="subtituloDeCategoria"></h3>
-					<h3 class="ubicacion">U$D 10000</h3>
-					<button><a class="" href="./product-page.html" title="">OFERTAR</a></button>
-
-				</div>
-			</div>
-
-			<div class="promocion" style="background-color:#e5e5e5;">
-				<div style="border-top-left-radius: 1rem; ">
-					<img src="../images/caballo1.png" style="border-top-left-radius: 1rem; " alt="" >
-				</div>
-				<div style="padding:10px" id="textoCategoria">
-					<h2 class="titulo">Lote #230: Jungle Boggie</h1>
-					<h3 class="subtituloDeCategoria"></h3>
-					<h3 class="ubicacion">U$D 10000</h3>
-					<button><a class="" href="./product-page.html" title="">OFERTAR</a></button>
-
-				</div>
-			</div>
-			
-			
-
-
-
-
-					
-	
-	
-	</div>
-</div>
-
-
-
-
-
-
-
-<!-- footer
-================================================== -->
-<!-- <footer>
-	 	<div class="footer-main">
-   		<div class="row">  
-		  	<div class="col-three tab-full footer-about">       
-				<h4 class="h05">POLO SALES</h4>
-				<p class="col-nine"><a href="" target="_F960AFIPInfo"><img src="http://www.afip.gob.ar/images/f960/DATAWEB.jpg" id="qrAfip" ></a></p>	            
-			  </div>  end footer-about 
-		  	<div class="col-three tab-full footer-social">
-			<h4 class="h05">Seguinos</h4>
-		  		<ul class="list-links">
-		  				<li><a href="#">Mail</a></li>
-						  <li><a href="#">Facebook</a></li>
-						  <li><a href="#">Google</a></li>
-															</ul>
-		  	</div>  
- <div class="col-four tab-full footer-subscribe end">
-
-		  		<h4 class="h05">Solicita codigo de acceso a las lsitas</h4>
-
-		  		<p>ingresa tu telefono</p>
-
-		  		<div class="subscribe-form">
-		  	
-		  			<form id="mc-form" class="group" novalidate="true">
-
-							<input type="email" value="" name="dEmail" class="email" id="mc-email" placeholder="type email" required=""> 
-	   		
-			   			<input type="submit" name="subscribe" >
-			   			<button><i class="icon-mail"></i></button>
-		   	
-		   				<label for="mc-email" class="subscribe-message"></label>
-			
-						</form>
-
-		  		</div>
-		  			   	
-		  	</div>  	     -->
-
-		  </div> 
-
-   	<!-- </div>
-   	<div class="footer-bottom">
-	</div> 
-	<div class="footer-bottom">
-		<div class="row">
-			<div class="col-twelve">
-				<div class="copyright">
-					<span>crafted by <a href="http://www.sideral.dev/" style="color:yellowgreen">sideral.dev</a></span>
-				</div>
 			</div>
 		</div>
-	</div> 
-</footer> -->
-
-
-<!-- Java Script
-================================================== --> 
-<script data-cfasync="false" type="text/javascript" src="./views/js/form-submission-handler.js"></script>
 
 </body>
-<script src="./views/js/react.js"></script>
-<script src="./views/js/src/plugins.js"></script>
-<script src="./views/js/src/main.js"></script>
-<script   type="module"  src="./views/js/index2Service.js"></script>
+
+<script src="../js/react.js"></script>
+<script src="../js/src/plugins.js"></script>
+<script src="../js/src/main.js"></script>
+<script type="module" src="../js/index2Service.js"></script>
+
 
 
 </html>
